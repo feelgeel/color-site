@@ -1,11 +1,12 @@
-.palettes{
+ .palettes{
     height: 100vh;
     display: flex;
 }
+
 .palettes-colors{
     display: flex;
-    flex-direction: column;
-    flex: 0 0 30% ;
-    flex-wrap: wrap;
+    /* flex-direction: column;
+    /* flex: 0 0 30% ; */
+    flex-wrap: wrap; 
 height: 100%;
 }

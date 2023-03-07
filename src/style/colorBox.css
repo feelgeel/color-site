@@ -1,9 +1,9 @@
 .colorBox{
     /* display: flex; */
-    /* width: 30%;
+    width: 25%;
     height: 25%;
-    margin: 0 auto;
+    /* margin: 0 auto;
     display: inline-block;
-    position: relative;
-    cursor: pointer; */
+    position: relative; */
+    cursor: pointer; 
 }
