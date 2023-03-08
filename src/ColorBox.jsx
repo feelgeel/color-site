@@ -6,7 +6,13 @@ export default class ColorBox extends Component {
     // console.log(this.props.background);
     return (
       <div style={{backgroundColor:this.props.background.color}}  className='colorBox'>
+        <div className="copy-box">
+        <span>COPY</span>
+        </div>
+        <div className="other-box">
         <span>{this.props.background.name}</span>
+        <span>MORE</span>
+        </div>
       </div>
     )
   }
