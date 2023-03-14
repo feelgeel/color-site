@@ -1,23 +1,22 @@
 .colorBox{
-    /* /* display: flex; */
-    /* flex-direction: column;
-     justify-content: center; */
-  align-items: center;
+    display:flex;
+    flex-direction: column;
+    /* flex-grow: 1; */
+    /* align-items: center; */
+   
     width: 25%;
     height: 25%;
     position: relative;
-    /* margin: 0 auto;
-    display: inline-block;
-    position: relative; */
     cursor: pointer; 
 }
-.copy-box{
-
+.copy-box,.empty-box,.other-box{
+    height: 33.33%;
  
 }
+
 .other-box{
     display: flex;
     justify-content: space-between;
-justify-self: flex-end;
- 
+align-items: flex-end;
+padding: 2px;
 }
