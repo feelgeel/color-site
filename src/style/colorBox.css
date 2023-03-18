@@ -1,30 +1,58 @@
 .colorBox{
     display:flex;
     flex-direction: column;
-    /* flex-grow: 1; */
-    /* align-items: center; */
-   
     width: 25%;
     height: 25%;
     position: relative;
     cursor: pointer; 
 }
+.colorBox:hover .copy-box{
+opacity:1;
+}
 .copy-box,.empty-box,.other-box{
     height: 33.33%;
- 
 }
 .copy-box{
+    opacity:0;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.copy-box span{
+.overlay{
+    width: 0vw;
+    height: 0vh;
+    z-index: 0;
+    opacity: 0;
+    transition: transform 0.6s ease-in-out;
+}
+.overlay-copy{
+    /* padding: 5px 20px;
+    background-color: rgba(white,0.3); */
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.overlay.show{
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    z-index: 10;
+    opacity: 1;
+    transform: scale(5);
+}
+.copy-box-name {
+ font-size: 1rem;
+}
+.copy-box span, .other-box-more{
   background-color: rgba(255,255,255,0.3);  
   padding: 3px 18px;
-  /* border-radius: 5px; */
   font-size: 1 rem;
   color: white;
 }
+
 
 
 .other-box{
