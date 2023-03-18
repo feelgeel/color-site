@@ -9,12 +9,12 @@ export default class ColorBox extends Component {
     this.handleCopy=this.handleCopy.bind(this)
   }
   handleCopy(){
-this.setState({ copied: true },()=>{
-  setTimeout(() => {
-    this.setState({ copied: false })
-  }, 999999999);
+// this.setState({ copied: true },()=>{
+//   setTimeout(() => {
+//     this.setState({ copied: false })
+//   }, 999999999);
   
-});
+// });
   }
   render() {
     const { name, color } = this.props.background;
