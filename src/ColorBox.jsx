@@ -9,12 +9,12 @@ export default class ColorBox extends Component {
     this.handleCopy=this.handleCopy.bind(this)
   }
   handleCopy(){
-// this.setState({ copied: true },()=>{
-//   setTimeout(() => {
-//     this.setState({ copied: false })
-//   }, 999999999);
+this.setState({ copied: true },()=>{
+  setTimeout(() => {
+    this.setState({ copied: false })
+  }, 999999999);
   
-// });
+});
   }
   render() {
     const { name, color } = this.props.background;
@@ -23,10 +23,16 @@ export default class ColorBox extends Component {
     return (
       <CopyToClipboard onCopy={()=>this.handleCopy()}>
         <div style={{ backgroundColor: color }} className="colorBox">
-          <div style={{ backgroundColor: color }}  className={`overlay ${copied&&"show"}`}>
-              
+         
+          <div style={{ backgroundColor: color }}
+          className={`overlay ${copied&&"show"}`}/>
+
+          <div className={`overlay-copy ${copied&&"show"}`}>
+            <div><h1>Copied</h1></div>
+            <div> <p>{color}</p></div>
+            
+           
           </div>
-          <span className="overlay-copy">COPY</span>
             <div className="empty-box"></div>
             <div className="copy-box">
               <span>COPY</span>
