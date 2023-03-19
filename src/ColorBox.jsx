@@ -12,7 +12,7 @@ export default class ColorBox extends Component {
 this.setState({ copied: true },()=>{
   setTimeout(() => {
     this.setState({ copied: false })
-  }, 999999999);
+  }, 99500);
   
 });
   }
